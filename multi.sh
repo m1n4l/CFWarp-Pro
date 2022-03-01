@@ -165,7 +165,7 @@ if [ $release = "Centos" ]
 		yellow " 不支持当前系统 "
 		exit 1
 	fi
-wget -N -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/wgcf
+wget -N -6 https://cdn.jsdelivr.net/gh/m1n4l/EUserv-warp/wgcf
 cp wgcf /usr/local/bin/wgcf
 sudo chmod +x /usr/local/bin/wgcf
 echo | wgcf register
@@ -651,7 +651,7 @@ green " 如上方显示IPV4地址：8.…………，则说明成功啦！\n 如
 }
 
 function upcore(){
-wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/YG-tsj/CFWarp-Pro/upcore.sh&& chmod +x upcore.sh && ./upcore.sh
+wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/m1n4l/CFWarp-Pro/upcore.sh&& chmod +x upcore.sh && ./upcore.sh
 }
 
 function iptables(){
@@ -740,18 +740,18 @@ systemctl status wg-quick@wgcf
 }
 
 function up4(){
-wget -N --no-check-certificate https://raw.githubusercontent.com/YG-tsj/CFWarp-Pro/main/multi.sh && chmod +x multi.sh && ./multi.sh
+wget -N --no-check-certificate https://raw.githubusercontent.com/m1n4l/CFWarp-Pro/main/multi.sh && chmod +x multi.sh && ./multi.sh
 }
 
 function up6(){
 echo -e nameserver 2a00:1098:2c::1 > /etc/resolv.conf
-wget -6 -N --no-check-certificate https://raw.githubusercontent.com/YG-tsj/CFWarp-Pro/main/multi.sh && chmod +x multi.sh && ./multi.sh
+wget -6 -N --no-check-certificate https://raw.githubusercontent.com/m1n4l/CFWarp-Pro/main/multi.sh && chmod +x multi.sh && ./multi.sh
 }
 
 #主菜单
 function start_menu(){
     clear
-    yellow " 详细说明 https://github.com/YG-tsj/CFWarp-Pro  YouTube频道：甬哥侃侃侃" 
+    yellow " 详细说明 https://github.com/m1n4l/CFWarp-Pro  YouTube频道：甬哥侃侃侃" 
     
     red " 切记：进入脚本快捷方式 bash multi.sh "
     
@@ -898,7 +898,7 @@ fi
 
 apt update
 apt -y --no-install-recommends install openresolv dnsutils wireguard-tools
-wget -N https://github.com/YG-tsj/CFWarp-Pro/raw/main/wgcf
+wget -N https://github.com/m1n4l/CFWarp-Pro/raw/main/wgcf
 cp wgcf /usr/local/bin/wgcf
 chmod +x /usr/local/bin/wgcf
 echo | wgcf register
@@ -928,7 +928,7 @@ fi
 
 apt update
 apt -y --no-install-recommends install openresolv dnsutils wireguard-tools
-wget -N https://github.com/YG-tsj/CFWarp-Pro/raw/main/wgcf
+wget -N https://github.com/m1n4l/CFWarp-Pro/raw/main/wgcf
 cp wgcf /usr/local/bin/wgcf
 chmod +x /usr/local/bin/wgcf
 echo | wgcf register
@@ -959,7 +959,7 @@ fi
 
 apt update
 apt -y --no-install-recommends install openresolv dnsutils wireguard-tools
-wget -N https://github.com/YG-tsj/CFWarp-Pro/raw/main/wgcf
+wget -N https://github.com/m1n4l/CFWarp-Pro/raw/main/wgcf
 cp wgcf /usr/local/bin/wgcf
 chmod +x /usr/local/bin/wgcf
 echo | wgcf register
