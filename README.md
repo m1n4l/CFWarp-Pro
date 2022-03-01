@@ -112,7 +112,7 @@ bash <(curl -sSL https://cdn.jsdelivr.net/gh/YG-tsj/CFWarp-Pro/root.sh)
 - **：支持X86/ARM架构的纯IPV4、纯IPV6、双栈IPV4+IPV6 VPS脚本**
 
 ```
-wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/YG-tsj/CFWarp-Pro/multi.sh && chmod +x multi.sh && ./multi.sh
+wget -N --no-check-certificate https://cdn.jsdelivr.net/gh/m1n4l/CFWarp-Pro/multi.sh && chmod +x multi.sh && ./multi.sh
 ```
 
 进入脚本快捷方式 ```bash multi.sh```
