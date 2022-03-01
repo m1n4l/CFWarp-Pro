@@ -107,7 +107,7 @@ v66=`ping ipv6.google.com -c 1 | grep received | awk 'NR==1 {print $4}'`
 
 if [[ ${v66} == "1" ]]; then
  v6=`wget -qO- -6 ip.gs` 
- WARPIPv6Status=$(curl -s6 https://www.cloudflare.com/m1n4l/trace | grep warp | cut -d= -f2) 
+ WARPIPv6Status=$(curl -s6 https://www.cloudflare.com/cdn-cgi/trace | grep warp | cut -d= -f2) 
  case ${WARPIPv6Status} in 
  on) 
  WARPIPv6Status=$(green "WARP已开启,当前IPV6地址：$v6 ") 
