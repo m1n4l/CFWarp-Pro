@@ -107,7 +107,7 @@ v66=`ping ipv6.google.com -c 1 | grep received | awk 'NR==1 {print $4}'`
 
 if [[ ${v66} == "1" ]]; then
  v6=`wget -qO- -6 ip.gs` 
- WARPIPv6Status=$(curl -s6 https://www.cloudflare.com/cdn-cgi/trace | grep warp | cut -d= -f2) 
+ WARPIPv6Status=$(curl -s6 https://www.cloudflare.com/m1n4l/trace | grep warp | cut -d= -f2) 
  case ${WARPIPv6Status} in 
  on) 
  WARPIPv6Status=$(green "WARP已开启,当前IPV6地址：$v6 ") 
@@ -224,7 +224,7 @@ if [ $release = "Centos" ]
 		yellow " 不支持当前系统 "
 		exit 1
 	fi
-wget -N -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/wgcf
+wget -N -6 https://cdn.jsdelivr.net/gh/m1/EUserv-warp/wgcf
 cp wgcf /usr/local/bin/wgcf
 sudo chmod +x /usr/local/bin/wgcf
 echo | wgcf register
@@ -284,7 +284,7 @@ if [ $release = "Centos" ]
 		yellow " 不支持当前系统 "
 		exit 1
 	fi
-wget -N -6 https://cdn.jsdelivr.net/gh/YG-tsj/EUserv-warp/wgcf
+wget -N -6 https://cdn.jsdelivr.net/gh/m1/EUserv-warp/wgcf
 cp wgcf /usr/local/bin/wgcf
 sudo chmod +x /usr/local/bin/wgcf
 echo | wgcf register
